@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "What is \"Joyful Consent\"?"
-date:   2013-11-05 21:37:41
-poster_image: '/img/accounts/Myers_Carpenter_1.gif'
-poster: Myers Carpenter
-poster_username: Myers_Carpenter_1
+date:   2013-10-25 14:10:34 -0400
+poster_image: '/img/accounts/Jordan_Greenhall_1.gif'
+poster: Jordan Greenhall
+poster_username: Jordan_Greenhall_1
 ---
 
 We think we understand consent. When someone is not coerced into doing something they consent, right? Yet a more realistic view recognizes that there is always some force of "coercion" that is influencing any given decision and that particularly in our modern world we accept "formal" consent far too often - leaving actual or "joyful" consent on the cutting room floor.
