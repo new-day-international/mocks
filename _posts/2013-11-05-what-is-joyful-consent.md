@@ -2,7 +2,7 @@
 layout: post
 title:  "What is \"Joyful Consent\"?"
 date:   2013-11-05 21:37:41
-poster_image: '/img/accounts/Myers_Carpenter_1.jpg'
+poster_image: '/img/accounts/Myers_Carpenter_1.gif'
 poster: Myers Carpenter
 poster_username: Myers_Carpenter_1
 ---
