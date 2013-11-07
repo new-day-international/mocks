@@ -15,6 +15,7 @@ title: Your New Jekyll Site
             <h4 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h4>
             <p>
               {% if post.last_comment %}last comment <time datetime="{{ post.last_comment.date | date_to_xmlschema}}">on {{ post.last_comment.date | date_to_long_string }}</time> by <a href="/u/{{post.last_comment.poster_username}}">{{ post.last_comment.poster }}</a>, {% endif %} added <time datetime="{{ post.date | date_to_xmlschema}}">on {{ post.date | date_to_long_string }}</time> by <a href="/u/{{post.poster_username}}">{{ post.poster }}</a> in <a href="/space/links">links</a></p>
+              
           </div>
         </li>
       {% endfor %}
