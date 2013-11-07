@@ -5,6 +5,11 @@ date:   2013-11-03 21:37:41
 poster_image: '/img/accounts/Curtis_Faith_1.gif'
 poster: Curtis Faith
 poster_username: Curtis_Faith_1
+last_comment:
+  date: 2013-11-01 22:37:41
+  poster_username: Jim_Rutt_1
+  poster: Jim Rutt
+  poster_image: '/img/accounts/Jim_Rutt_1.gif'
 ---
 
 We think we understand consent. When someone is not coerced into doing something they consent, right? Yet a more realistic view recognizes that there is always some force of "coercion" that is influencing any given decision and that particularly in our modern world we accept "formal" consent far too often - leaving actual or "joyful" consent on the cutting room floor.
