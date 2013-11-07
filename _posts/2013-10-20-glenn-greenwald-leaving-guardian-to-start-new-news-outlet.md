@@ -8,6 +8,7 @@ poster: Casey Driscoll
 poster_username: Casey_Driscoll_1
 target_url: http://www.buzzfeed.com/bensmith/exclusive-glenn-greenwald-will-leave-guardian-to-create-new
 comment_count: 1
+score: 4
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Jim_Rutt_1

@@ -8,6 +8,7 @@ poster: Jim Rutt
 poster_username: Jim_Rutt_1
 target_url: http://www.theguardian.com/commentisfree/2013/nov/01/how-economic-growth-has-become-anti-life
 comment_count: 0
+score: 3
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Jim_Rutt_1

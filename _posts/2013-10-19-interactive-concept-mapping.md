@@ -8,6 +8,7 @@ poster: Meghan Williamson
 poster_username: Meghan_Williamson_1
 target_url: 
 comment_count: 18
+score: 5
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Casey_Driscoll_1

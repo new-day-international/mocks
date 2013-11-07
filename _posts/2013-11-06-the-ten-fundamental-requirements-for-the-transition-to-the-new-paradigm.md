@@ -7,6 +7,7 @@ poster_image: '/img/accounts/Bonnitta_Roy_1.gif'
 poster: Bonnitta Roy
 poster_username: Bonnitta_Roy_1
 comment_count: 7
+score: 0
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Myers_Carpenter_1

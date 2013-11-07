@@ -8,6 +8,12 @@ title: Your New Jekyll Site
     <ul id="item-list" class="media-list">
       {% for post in site.posts %}
         <li class="media">
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="glyphicon glyphicon-arrow-up"></i><br/>
+            {{ post.score }}<br/>
+            <i class="glyphicon glyphicon-arrow-down"></i>
+          </div>
+
           <a class="pull-left" href="{{ post.url }}">
             <img src="{{ post.poster_image }}" height="48" width="48" class="img-rounded media-object" />
           </a>
