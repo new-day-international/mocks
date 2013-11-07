@@ -5,6 +5,7 @@ date:   2013-11-03 21:37:41
 poster_image: '/img/accounts/Curtis_Faith_1.gif'
 poster: Curtis Faith
 poster_username: Curtis_Faith_1
+comment_count: 3
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Jim_Rutt_1

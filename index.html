@@ -14,8 +14,12 @@ title: Your New Jekyll Site
           <div class="media-body">
             <h4 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h4>
             <p>
-              {% if post.last_comment %}last comment <time datetime="{{ post.last_comment.date | date_to_xmlschema}}">on {{ post.last_comment.date | date_to_long_string }}</time> by <a href="/u/{{post.last_comment.poster_username}}">{{ post.last_comment.poster }}</a>, {% endif %} added <time datetime="{{ post.date | date_to_xmlschema}}">on {{ post.date | date_to_long_string }}</time> by <a href="/u/{{post.poster_username}}">{{ post.poster }}</a> in <a href="/space/links">links</a></p>
-              
+              {% if post.last_comment %}last comment <time datetime="{{ post.last_comment.date | date_to_xmlschema}}">on {{ post.last_comment.date | date_to_long_string }}</time> by <a href="/u/{{post.last_comment.poster_username}}">{{ post.last_comment.poster }}</a>, {% endif %} added <time datetime="{{ post.date | date_to_xmlschema}}">on {{ post.date | date_to_long_string }}</time> by <a href="/u/{{post.poster_username}}">{{ post.poster }}</a> in <a href="/space/links">links</a>
+              <br/>
+              <button type="button" class="btn btn-sm btn-link">{% if post.comment_count and post.comment_count > 0 %}{{ post.comment_count | pluralize: 'comment', 'comments' }}{% else %}comment{% endif %}</button>
+              <button type="button" class="btn btn-sm btn-link">save</button>
+              <button type="button" class="btn btn-sm btn-link">report</button>
+            </p>
           </div>
         </li>
       {% endfor %}

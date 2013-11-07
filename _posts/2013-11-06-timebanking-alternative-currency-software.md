@@ -5,6 +5,7 @@ date:   2013-11-05 21:37:41
 poster_image: '/img/accounts/Meghan_Williamson_1.gif'
 poster: Meghan Williamson
 poster_username: Meghan_Williamson_1
+comment_count: 1
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Myers_Carpenter_1

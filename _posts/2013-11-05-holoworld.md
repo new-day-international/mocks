@@ -5,6 +5,7 @@ date:   2013-11-05 21:37:41
 poster_image: '/img/accounts/Flemming_Funch_1.gif'
 poster: Flemming Funch 
 poster_username: Flemming_Funch_1
+comment_count: 12
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Curtis_Faith_1

@@ -5,6 +5,7 @@ date:   2013-10-25 14:10:34 -0400
 poster_image: '/img/accounts/Jordan_Greenhall_1.gif'
 poster: Jordan Greenhall
 poster_username: Jordan_Greenhall_1
+comment_count: 44
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Curtis_Faith_1

@@ -6,6 +6,7 @@ poster_image: '/img/accounts/Meghan_Williamson_1.gif'
 poster: Meghan Williamson 
 poster_username: Meghan_Williamson_1
 target_url: 
+comment_count: 18
 last_comment:
   date: 2013-11-01 22:37:41
   poster_username: Casey_Driscoll_1
