@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Probes into forex trading spread across globe"
+categories: [links]
 date:   2013-11-05 21:37:41
 poster_image: '/img/accounts/Curtis_Faith_1.gif'
 poster: Curtis Faith

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Timebanking/Alternative Currency Software"
+categories: [world-change]
 date:   2013-11-05 21:37:41
 poster_image: '/img/accounts/Meghan_Williamson_1.gif'
 poster: Meghan Williamson

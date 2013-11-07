@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Interactive Concept Mapping"
+categories: [lightnet]
 date:   2013-10-19 21:37:41
 poster_image: '/img/accounts/Meghan_Williamson_1.gif'
 poster: Meghan Williamson 

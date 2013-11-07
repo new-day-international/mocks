@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Glenn Greenwald leaving Guardian to start new news outlet"
+categories: [lightnet]
 date:   2013-10-20 21:37:41
 poster_image: '/img/accounts/Casey_Driscoll_1.gif'
 poster: Casey Driscoll

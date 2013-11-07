@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How economic growth has become anti-life An obsession with growth has eclipsed our concern for sustainability, justice and human dignity"
+categories: [lightnet]
 date:   2013-11-01 21:37:41
 poster_image: '/img/accounts/Jim_Rutt_1.gif'
 poster: Jim Rutt

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Ten Fundamental Requirements for the Transition to the New Paradigm"
+categories: [world-change]
 date:   2013-11-05 21:37:41
 poster_image: '/img/accounts/Bonnitta_Roy_1.gif'
 poster: Bonnitta Roy

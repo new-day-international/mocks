@@ -6,7 +6,7 @@ title: Your New Jekyll Site
 <div class="row">
   <div id="home" class="container col-md-9">
     <ul id="item-list" class="media-list">
-      {% for post in site.posts %}
+      {% for post in site.categories.lightnet %}
         <li class="media">
           <a class="pull-left" href="{{ post.url }}">
             <img src="{{ post.poster_image }}" height="48" width="48" class="img-rounded media-object" />
