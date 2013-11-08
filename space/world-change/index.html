@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lightnet with bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    <!--
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+  -->
+    <link id="bootstrap-theme" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .navbar-nav>li.dropdown>a {
+      padding: 6px;
+    }
+
+    .theme-amelia #item-list>li:nth-child(odd) {
+      background-color: rgb(15, 127, 136);
+    }
+
+    .theme-slate #item-list>li:nth-child(odd) {
+      background-color: rgb(53, 58, 65);
+    }
+
+    #item-list>li:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+    
+    #item-list .media {
+      padding: 10px 5px 0;
+    }
+    #item-list .media p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+
+    #item-list .media {
+      padding: 10px 5px 0;
+    }
+
+    #item-list .media p {
+      margin: 0;
+    }
+
+    #item-list .media .minor {
+      color: rgb(221, 221, 221);
+    }
+
+    #item-list .media:hover .minor {
+      color: rgb(47, 164, 231);
+    }
+
+    #item-list .media .vote-buttons {
+      width: 25px;
+    }
+
+    #item-list .media .vote-buttons i {
+      font-size: 24px;
+      color: rgb(221, 221, 221);
+
+    }
+    #item-list ol, #item-list ul {
+        list-style: none outside none;
+    }
+
+    #item-list .media:hover .vote-buttons i {
+      color: rgb(47, 164, 231);
+    }
+
+    #item-list .media {
+      border-radius: 2px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">lightnet</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">my spaces</a></li>
+            <li><a href="#about">all</a></li>
+            <li><a href="#contact">follow</a></li>
+            <li><a href="#contact">mod</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-envelope-o"></i> Inbox <span class="badge btn-danger">5</span></a></li>
+            <li><a href="#">Notification <span class="badge btn-danger">42</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-rounded" src="/img/accounts/Myers_Carpenter_1.gif" height="40" width="40" /><b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">saved</a></li>
+                <li><a href="#">options</a></li>
+                <li><a href="#">apps</a></li>
+                <li><a href="#">RSS feeds</a></li>
+                <li><a href="#">follow</a></li>
+                <li><a href="#">password/email</a></li>
+                <li><a href="#">two-factor authentication</a></li>
+                <li class="divider"></li>
+                <li role="presentation" class="dropdown-header">theme</li>
+                <li class="theme"><a href="#">amelia</a></li>
+                <li class="theme"><a href="#">cerulean</a></li>
+                <li class="theme"><a href="#">cosmo</a></li>
+                <li class="theme"><a href="#">cyborg</a></li>
+                <li class="theme"><a href="#">flatly</a></li>
+                <li class="theme"><a href="#">journal</a></li>
+                <li class="theme"><a href="#">readable</a></li>
+                <li class="theme"><a href="#">simplex</a></li>
+                <li class="theme"><a href="#">slate</a></li>
+                <li class="theme"><a href="#">spacelab</a></li>
+                <li class="theme"><a href="#">united</a></li>
+                <li class="divider"></li>
+                <li><a href="#">logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+  <div id="home" class="container col-md-9">
+    <ul id="item-list" class="media-list">
+      
+        <li class="media">
+          <a class="pull-left" href="/world-change/2013/11/07/i-want-to-be-a-millenial-when-i-retire.html">
+            <img src="/img/accounts/Jim_Rutt_1.gif" height="48" width="48" class="img-rounded media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="/world-change/2013/11/07/i-want-to-be-a-millenial-when-i-retire.html">I Want to Be a Millennial When I Retire</a></h4>
+            <p>
+              last comment <time datetime="2013-11-07T17:37:41-05:00">on 07 November 2013</time> by <a href="/u/Casey_Driscoll_1">Casey Driscoll</a>,  added <time datetime="2013-11-07T16:37:41-05:00">on 07 November 2013</time> by <a href="/u/Jim_Rutt_1">Jim Rutt</a> in <a href="/space/world-change">world-change</a></p>
+              
+          </div>
+        </li>
+      
+        <li class="media">
+          <a class="pull-left" href="/world-change/2013/11/05/timebanking-alternative-currency-software.html">
+            <img src="/img/accounts/Meghan_Williamson_1.gif" height="48" width="48" class="img-rounded media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="/world-change/2013/11/05/timebanking-alternative-currency-software.html">Timebanking/Alternative Currency Software</a></h4>
+            <p>
+              last comment <time datetime="2013-11-01T18:37:41-04:00">on 01 November 2013</time> by <a href="/u/Myers_Carpenter_1">Myers Carpenter</a>,  added <time datetime="2013-11-05T16:37:41-05:00">on 05 November 2013</time> by <a href="/u/Meghan_Williamson_1">Meghan Williamson</a> in <a href="/space/world-change">world-change</a></p>
+              
+          </div>
+        </li>
+      
+        <li class="media">
+          <a class="pull-left" href="/world-change/2013/11/05/the-ten-fundamental-requirements-for-the-transition-to-the-new-paradigm.html">
+            <img src="/img/accounts/Bonnitta_Roy_1.gif" height="48" width="48" class="img-rounded media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="/world-change/2013/11/05/the-ten-fundamental-requirements-for-the-transition-to-the-new-paradigm.html">The Ten Fundamental Requirements for the Transition to the New Paradigm</a></h4>
+            <p>
+              last comment <time datetime="2013-11-01T18:37:41-04:00">on 01 November 2013</time> by <a href="/u/Myers_Carpenter_1">Myers Carpenter</a>,  added <time datetime="2013-11-05T16:37:41-05:00">on 05 November 2013</time> by <a href="/u/Bonnitta_Roy_1">Bonnitta Roy</a> in <a href="/space/world-change">world-change</a></p>
+              
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div id="sidebar" class="container col-md-3">
+    <form method="get" action="/search">
+
+
+      <div class="input-group input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+        <input type="text" class="form-control" placeholder="search lightnet">
+      </div>
+    </form>
+    <br/>
+    <br/>
+
+    <button type="button" class="btn btn-block btn-primary">Manange subscriptions</button>
+    <br/>
+    <button type="button" class="btn btn-block btn-primary">Add new link</button>
+    <button type="button" class="btn btn-block btn-primary">Add new text post</button>
+    <button type="button" class="btn btn-block btn-primary">Add new file</button>
+    <br/>
+    
+    <button type="button" class="btn btn-block btn-primary">Create your own space</button>
+
+    <h3>World Change</h3>
+    <button type="button" class="btn btn-success btn-sm">Subscribe</button>
+
+    <br/>
+    <br/>
+
+    <div class="well well-sm">
+      <h4><i class="glyphicon glyphicon-exclamation-sign"></i> House Rules</h4>
+      <ul>
+        <li>Act with honesty and good faith</li>
+        <li>Assume the same in others</li>
+        <li>Be nice</li>
+        <li>Start with the assumption of possible</li>
+        <li>Ask how we can do it</li>
+        <li>Surface issues/problems in a positive way</li>
+      </ul>
+    </div>
+
+    <div class="well well-sm">
+      <h4><i class="glyphicon glyphicon-globe"></i> Space Overview</h4>
+      <p>Want to help change the world? This is the place to talk strategy and tactics for building a better world together.</p>
+    </div>
+
+    <div class="well well-sm">
+      <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Space Rules</h4>
+      <ul>
+        <li>Be honest</li>
+        <li>Be nice</li>
+        <li>Think big</li>
+        <li>Help others</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>     
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.timeago.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script>
+      function changeTheme(name) {
+        $('#bootstrap-theme').attr('href', "//netdna.bootstrapcdn.com/bootswatch/3.0.0/" + name + "/bootstrap.min.css");
+        $.cookie('theme', name);
+        $('body').removeClass('theme-' + $('body').data('theme'));
+        $('body').data('theme', name);
+        $('body').addClass('theme-' + name);
+        $('.theme').removeClass('disabled');
+        $('.theme a:contains("' + name + '")').parent().addClass('disabled');
+      }
+      $(function () {
+        $("time").timeago();
+
+        $(".theme").find('a').click(function(event) {
+          event.preventDefault();
+          changeTheme($(this).text());
+        })
+        var theme = $.cookie('theme') || 'cerulean'
+        changeTheme(theme);
+      });
+    </script>
+  </body>
+</html>
