@@ -12,6 +12,3 @@ task :setup do
     end
   end
 end
-
-task :deploy do
-  Dir.chdir(File.join(File.dirname(__FILE__), ) do
