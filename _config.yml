@@ -1,3 +1,5 @@
 name: lightnet mock with bootstrap
 markdown: redcarpet
 pygments: true
+exclude: 
+  - Rakefile
