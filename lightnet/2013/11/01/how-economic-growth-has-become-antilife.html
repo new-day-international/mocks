@@ -135,8 +135,25 @@
       </div>
     </div>
 
+<div class="modal" id="instructions1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Lightnet Mocks</h4>
+      </div>
+      <div class="modal-body">
+        <p>You can change the theme of the page by looking in the upper right menu (with Myers' face on it).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
     <div class="container">
-    <h2>How economic growth has become anti-life An obsession with growth has eclipsed our concern for sustainability, justice and human dignity</h2>
+      <h2>How economic growth has become anti-life An obsession with growth has eclipsed our concern for sustainability, justice and human dignity</h2>
 <p class="meta">01 Nov 2013</p>
 
 <div class="post">
@@ -146,7 +163,7 @@
 
 </div>
 
-  </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>     
@@ -173,6 +190,15 @@
         })
         var theme = $.cookie('theme') || 'cerulean'
         changeTheme(theme);
+        if ($.cookie('instructions1') != 'hide') {
+          setTimeout(function() {
+            $('#instructions1').modal({});
+          }, 500);
+        }
+        $('#instructions1').on('hidden.bs.modal', function () {
+          $.cookie('instructions1', 'hide');
+        });
+
       });
     </script>
   </body>
