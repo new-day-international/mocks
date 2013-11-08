@@ -9,13 +9,13 @@ title: Your New Jekyll Site
       {% for post in site.posts %}
         <li class="media">
           <div class="pull-left vote-buttons text-center" style="width:25px;">
-            <i class="glyphicon glyphicon-arrow-up"></i><br/>
+            <i class="fa fa-arrow-up"></i><br/>
             {{ post.score }}<br/>
-            <i class="glyphicon glyphicon-arrow-down"></i>
+            <i class="fa fa-arrow-down"></i>
           </div>
 
           <a class="pull-left" href="{{ post.url }}">
-            <img src="{{ post.poster_image }}" height="48" width="48" class="img-rounded media-object" />
+            <img src="{{ post.poster_image }}" height="64" width="64" class="img-rounded media-object" />
           </a>
           <div class="media-body">
             <h4 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h4>
