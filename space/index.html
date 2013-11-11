@@ -1,0 +1,45 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div class="row">
+  <div id="home" class="container col-md-9">
+    <ul id="item-list" class="media-list">
+      {% for space in site.data.spaces %}
+        <li class="media">
+          <img src="{{ space.icon }}" height="50" class="pull-left" style="margin: 10px 15px 50px 5px;" />
+          <h4>
+            <a href="/space/{{ space.url_slug }}">{{ space.title }}</a>
+            <button class="btn btn-xs btn-success">Subscribe</button>
+          </h4>
+          <p>{{ space.description }}</p>
+          <p>{{ space.subscribers }} subscribers. Active {{ space.last_active }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div id="sidebar" class="container col-md-3">
+    <form method="get" action="/search">
+
+
+      <div class="input-group input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+        <input type="text" class="form-control" placeholder="search lightnet">
+      </div>
+    </form>
+    <br/>
+    <br/>
+
+    <button type="button" class="btn btn-block btn-primary">Manange subscriptions</button>
+    <br/>
+    <button type="button" class="btn btn-block btn-primary">Add new link</button>
+    <button type="button" class="btn btn-block btn-primary">Add new text post</button>
+    <button type="button" class="btn btn-block btn-primary">Add new file</button>
+    <br/>
+    
+    <button type="button" class="btn btn-block btn-primary">Create your own space</button>
+
+  </div>
+</div>
