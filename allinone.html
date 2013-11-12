@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>All in One</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 
@@ -19,8 +19,34 @@
     <style>
     #leftbar {
       background-color: #ddd;
+      width: 205px;
+      float: left;
+      display: inline;
+      margin: -20px 0;
+      padding: 8px;
+      margin-right: 10px;
+      height: 100%;
+    }
+
+    h4.collapsable.collapsed .glyphicon-collapse-down {
+      display: none;
+    }
+    h4.collapsable.collapsed .glyphicon-collapse-up {
+      display: inline;
+    }
+
+    h4.collapsable:not(.collapsed) .glyphicon-collapse-up {
+      display: none;
+    }
+    h4.collapsable:not(.collapsed) .glyphicon-collapse-down {
+      display: inline;
     }
     
+    ul.space-list {
+      list-style-type: none;
+      margin-left: -20px;
+    }
+
     .navbar-nav>li.dropdown>a {
       padding: 6px;
     }
@@ -161,9 +187,72 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+
+
+  <div id="leftbar">
+    <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail2">go to space by name</label>
+      <input type="space_name" class="form-control" id="exampleInputEmail2" placeholder="go to space by name">
+    </div>
+   </form>
+
+<h4 class="collapsable" data-toggle="collapse" data-target="#multispaces"><i class="glyphicon glyphicon-collapse-down"></i><i class="glyphicon glyphicon-collapse-up"></i> Multispaces</h4>
+<ul id="multispaces" class="collapse in space-list">
+  <li>MySubscribed</li>
+  <li>All </li>
+  <li>Morbi leo risus</li>
+  <li>Followed</li>
+  <li>MyModerated</li>
+</ul>
+
+<h4 class="collapsable" data-toggle="collapse" data-target="#subscribed-spaces"><i class="glyphicon glyphicon-collapse-down"></i><i class="glyphicon glyphicon-collapse-up"></i> Subscribed Spaces</h4>
+<ul id="subscribed-spaces" class="collapse in space-list">
+  <li>alt-currency</li>
+  <li>askjim</li>
+  <li>books</li>
+  <li>ci</li>
+  <li>collective_insight</li>
+  <li>connector</li>
+  <li>dreams</li>
+  <li>education</li>
+  <li>feedback</li>
+  <li>flosolutions</li>
+
+  <li>freedom</li>
+  <li>gameb</li>
+  <li>gameb_designprinciple</li>
+  <li>gameb_ethos</li>
+  <li>governace.talk</li>
+  <li>jefferson</li>
+  <li>lightnet</li>
+  <li>lightnet.advisors</li>
+  <li>lightnet.bugs</li>
+  <li>lightnet.design</li>
+
+  <li>lightnet.dev</li>
+  <li>lightnet.help</li>
+  <li>lightnet.news</li>
+  <li>links</li>
+  <li>looselycoupled</li>
+  <li>minecraft</li>
+  <li>moonshots</li>
+  <li>newday</li>
+  <li>newday.website</li>
+  <li>politics.economics</li>
+  <li>proximate-b</li>
+  <li>studioblue</li>
+</ul>
+
+  </div>
+
+
+
+
+
     <div class="container">
       <div class="row">
-  <div id="home" class="container col-md-9">
+  <div id="home" class="container col-md-6">
     <ul id="item-list" class="media-list">
       
         <li class="media">
