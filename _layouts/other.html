@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title || "lightnet with bootstrap" }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    <!--
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+  -->
+    <link id="bootstrap-theme" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    #leftbar {
+      background-color: #ddd;
+      width: 205px;
+      float: left;
+      display: inline;
+      margin: -20px 0;
+      padding: 8px;
+      margin-right: 10px;
+      height: 100%;
+    }
+
+    h4.collapsable.collapsed .glyphicon-collapse-down {
+      display: none;
+    }
+    h4.collapsable.collapsed .glyphicon-collapse-up {
+      display: inline;
+    }
+
+    h4.collapsable:not(.collapsed) .glyphicon-collapse-up {
+      display: none;
+    }
+    h4.collapsable:not(.collapsed) .glyphicon-collapse-down {
+      display: inline;
+    }
+    
+    ul.space-list {
+      list-style-type: none;
+      margin-left: -20px;
+    }
+
+    .navbar-nav>li.dropdown>a {
+      padding: 6px;
+    }
+
+    .theme-amelia #item-list>li:nth-child(odd) {
+      background-color: rgb(15, 127, 136);
+    }
+
+    .theme-slate #item-list>li:nth-child(odd) {
+      background-color: rgb(53, 58, 65);
+    }
+
+    #item-list>li:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+    
+    #item-list .media {
+      padding: 10px 5px 0;
+    }
+    #item-list .media p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+
+    #item-list .media {
+      padding: 10px 5px 0;
+    }
+
+    #item-list .media p {
+      margin: 0;
+    }
+
+    #item-list .media .minor {
+      color: rgb(221, 221, 221);
+    }
+
+    #item-list .media:hover .minor {
+      color: rgb(47, 164, 231);
+    }
+    #item-list .media-object {
+      margin-top: 14px;
+    }
+    #item-list .media .vote-buttons {
+      width: 25px;
+    }
+
+    #item-list .media .vote-buttons i {
+      font-size: 24px;
+      color: rgb(221, 221, 221);
+
+    }
+    #item-list ol, #item-list ul {
+        list-style: none outside none;
+    }
+
+    #item-list .media:hover .vote-buttons i {
+      color: rgb(47, 164, 231);
+    }
+
+    #item-list .media {
+      border-radius: 2px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">lightnet</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/space">my spaces</a></li>
+            <li><a href="#about">all</a></li>
+            <li><a href="#contact">follow</a></li>
+            <li><a href="#contact">mod</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-envelope-o"></i> Inbox <span class="badge btn-danger">5</span></a></li>
+            <li><a href="#">Notification <span class="badge btn-danger">42</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-rounded" src="/img/accounts/Myers_Carpenter_1.gif" height="40" width="40" /><b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">saved</a></li>
+                <li><a href="#">options</a></li>
+                <li><a href="#">apps</a></li>
+                <li><a href="#">RSS feeds</a></li>
+                <li><a href="#">follow</a></li>
+                <li><a href="#">password/email</a></li>
+                <li><a href="#">two-factor authentication</a></li>
+                <li class="divider"></li>
+                <li role="presentation" class="dropdown-header">theme</li>
+                <li class="theme"><a href="#">amelia</a></li>
+                <li class="theme"><a href="#">cerulean</a></li>
+                <li class="theme"><a href="#">cosmo</a></li>
+                <li class="theme"><a href="#">cyborg</a></li>
+                <li class="theme"><a href="#">flatly</a></li>
+                <li class="theme"><a href="#">journal</a></li>
+                <li class="theme"><a href="#">readable</a></li>
+                <li class="theme"><a href="#">simplex</a></li>
+                <li class="theme"><a href="#">slate</a></li>
+                <li class="theme"><a href="#">spacelab</a></li>
+                <li class="theme"><a href="#">united</a></li>
+                <li class="divider"></li>
+                <li><a href="/space_grid/">space grid</a></li>
+                <li><a href="/allinone.html">all in one</a></li>
+                <li class="divider"></li>
+                <li><a href="#">logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+<div class="modal" id="instructions1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Lightnet Mocks</h4>
+      </div>
+      <div class="modal-body">
+        <p>You can change the theme of the page by looking in the upper right menu (with Myers' face on it).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+  <div id="leftbar">
+    <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail2">go to space by name</label>
+      <input type="space_name" class="form-control" id="exampleInputEmail2" placeholder="go to space by name">
+    </div>
+   </form>
+
+<h4 class="collapsable" data-toggle="collapse" data-target="#multispaces"><i class="glyphicon glyphicon-collapse-down"></i><i class="glyphicon glyphicon-collapse-up"></i> Multispaces</h4>
+<ul id="multispaces" class="collapse in space-list">
+  <li>MySubscribed</li>
+  <li>All </li>
+  <li>Morbi leo risus</li>
+  <li>Followed</li>
+  <li>MyModerated</li>
+</ul>
+
+<h4 class="collapsable" data-toggle="collapse" data-target="#subscribed-spaces"><i class="glyphicon glyphicon-collapse-down"></i><i class="glyphicon glyphicon-collapse-up"></i> Subscribed Spaces</h4>
+<ul id="subscribed-spaces" class="collapse in space-list">
+  <li>alt-currency</li>
+  <li>askjim</li>
+  <li>books</li>
+  <li>ci</li>
+  <li>collective_insight</li>
+  <li>connector</li>
+  <li>dreams</li>
+  <li>education</li>
+  <li>feedback</li>
+  <li>flosolutions</li>
+
+  <li>freedom</li>
+  <li>gameb</li>
+  <li>gameb_designprinciple</li>
+  <li>gameb_ethos</li>
+  <li>governace.talk</li>
+  <li>jefferson</li>
+  <li>lightnet</li>
+  <li>lightnet.advisors</li>
+  <li>lightnet.bugs</li>
+  <li>lightnet.design</li>
+
+  <li>lightnet.dev</li>
+  <li>lightnet.help</li>
+  <li>lightnet.news</li>
+  <li>links</li>
+  <li>looselycoupled</li>
+  <li>minecraft</li>
+  <li>moonshots</li>
+  <li>newday</li>
+  <li>newday.website</li>
+  <li>politics.economics</li>
+  <li>proximate-b</li>
+  <li>studioblue</li>
+</ul>
+
+  </div>
+
+
+
+
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>     
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.timeago.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script>
+      function changeTheme(name) {
+        $('#bootstrap-theme').attr('href', "//netdna.bootstrapcdn.com/bootswatch/3.0.0/" + name + "/bootstrap.min.css");
+        $.cookie('theme', name);
+        $('body').removeClass('theme-' + $('body').data('theme'));
+        $('body').data('theme', name);
+        $('body').addClass('theme-' + name);
+        $('.theme').removeClass('disabled');
+        $('.theme a:contains("' + name + '")').parent().addClass('disabled');
+      }
+      $(function () {
+        $("time").timeago();
+
+        $(".theme").find('a').click(function(event) {
+          event.preventDefault();
+          changeTheme($(this).text());
+        })
+        var theme = $.cookie('theme') || 'cerulean'
+        changeTheme(theme);
+        if ($.cookie('instructions1') != 'hide') {
+          setTimeout(function() {
+            $('#instructions1').modal({});
+          }, 500);
+        }
+        $('#instructions1').on('hidden.bs.modal', function () {
+          $.cookie('instructions1', 'hide');
+        });
+
+      });
+    </script>
+  </body>
+</html>

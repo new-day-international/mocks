@@ -1,0 +1,59 @@
+---
+layout: other
+title: All in One
+---
+
+
+
+<div class="row">
+  <div id="home" class="container col-md-6">
+    <ul id="item-list" class="media-list">
+      {% for post in site.posts %}
+        <li class="media">
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="fa fa-arrow-up"></i><br/>
+            {{ post.score }}<br/>
+            <i class="fa fa-arrow-down"></i>
+          </div>
+
+          <a class="pull-left" href="{{ post.url }}">
+            <img src="{{ post.poster_image }}" height="38" width="38" class="img-rounded media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>
+              {% if post.last_comment %}last comment <time datetime="{{ post.last_comment.date | date_to_xmlschema}}">on {{ post.last_comment.date | date_to_long_string }}</time> by <a href="/u/{{post.last_comment.poster_username}}">{{ post.last_comment.poster }}</a>, {% endif %} added <time datetime="{{ post.date | date_to_xmlschema}}">on {{ post.date | date_to_long_string }}</time> by <a href="/u/{{post.poster_username}}">{{ post.poster }}</a> in <a href="/space/{{ post.categories }}">{{ post.categories }}</a>
+              <br/>
+              <button type="button" class="btn-sm btn-link"><i class="glyphicon glyphicon-comment"></i> {% if post.comment_count and post.comment_count > 0 %}{{ post.comment_count | pluralize: 'comment', 'comments' }}{% else %}comment{% endif %}</button>
+              <button type="button" class="btn-sm btn-link minor">save</button>
+              <button type="button" class="btn-sm btn-link minor">report</button>
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div id="sidebar" class="container col-md-3">
+    <form method="get" action="/search">
+
+
+      <div class="input-group input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+        <input type="text" class="form-control" placeholder="search lightnet">
+      </div>
+    </form>
+    <br/>
+    <br/>
+
+    <button type="button" class="btn btn-block btn-primary">Manange subscriptions</button>
+    <br/>
+    <button type="button" class="btn btn-block btn-primary">Add new link</button>
+    <button type="button" class="btn btn-block btn-primary">Add new text post</button>
+    <button type="button" class="btn btn-block btn-primary">Add new file</button>
+    <br/>
+    
+    <button type="button" class="btn btn-block btn-primary">Create your own space</button>
+
+  </div>
+</div>
