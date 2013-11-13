@@ -1,9 +1,10 @@
 ---
 layout: default
+title: mocknet
 ---
 
 <div class="row">
-  <div id="home" class=" col-md-9">
+  <div id="home" class="col-md-9">
     <ul id="item-list" class="media-list">
       {% for post in site.posts %}
         <li class="media">
@@ -31,26 +32,5 @@ layout: default
     </ul>
   </div>
 
-  <div id="sidebar" class=" col-md-3">
-    <form method="get" action="/search">
-
-
-      <div class="input-group input-group">
-        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-        <input type="text" class="form-control" placeholder="search lightnet">
-      </div>
-    </form>
-    <br/>
-    <br/>
-
-    <button type="button" class="btn btn-block btn-primary">Manange subscriptions</button>
-    <br/>
-    <button type="button" class="btn btn-block btn-primary">Add new link</button>
-    <button type="button" class="btn btn-block btn-primary">Add new text post</button>
-    <button type="button" class="btn btn-block btn-primary">Add new file</button>
-    <br/>
-    
-    <button type="button" class="btn btn-block btn-primary">Create your own space</button>
-
-  </div>
+  {% include sidebar.html %}
 </div>

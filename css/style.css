@@ -66,6 +66,22 @@
   border-radius: 2px;
 }
 
+/*** Spaces ***/
+.space-icon {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.space-icon img {
+  margin: 10px auto;
+}
+
+.space-description {}
+.space-description .meta {
+  font-weight: bold;
+}
+
+
 ul.nav li.spaces-dropdown > ul.dropdown-menu a {
   padding: 1px 8px !important;
   font-size: 12px;
