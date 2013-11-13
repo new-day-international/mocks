@@ -1,0 +1,67 @@
+#leftbar {
+      background-color: #ddd;
+}
+
+.navbar-nav>li.dropdown>a {
+  padding: 6px;
+}
+
+.theme-amelia #item-list>li:nth-child(odd) {
+  background-color: rgb(15, 127, 136);
+}
+
+.theme-slate #item-list>li:nth-child(odd) {
+  background-color: rgb(53, 58, 65);
+}
+
+#item-list>li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+#item-list .media {
+  padding: 10px 5px 0;
+}
+#item-list .media p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+#item-list .media {
+  padding: 10px 5px 0;
+}
+
+#item-list .media p {
+  margin: 0;
+}
+
+#item-list .media .minor {
+  color: rgb(221, 221, 221);
+}
+
+#item-list .media:hover .minor {
+  color: rgb(47, 164, 231);
+}
+#item-list .media-object {
+  margin-top: 14px;
+}
+#item-list .media .vote-buttons {
+  width: 25px;
+}
+
+#item-list .media .vote-buttons i {
+  font-size: 24px;
+  color: rgb(221, 221, 221);
+
+}
+#item-list ol, #item-list ul {
+    list-style: none outside none;
+}
+
+#item-list .media:hover .vote-buttons i {
+  color: rgb(47, 164, 231);
+}
+
+#item-list .media {
+  border-radius: 2px;
+}
