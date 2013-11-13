@@ -7,16 +7,16 @@ tags:
 
 <div class="row">
   <div id="home" class="col-md-9">
-    <ul id="item-list" class="media-list">
+    <ul id="item-list" class="h-grid media-list">
       {% for space in site.data.spaces %}
         <li class="media space">
-          <div class="col-md-2 space-icon">
+          <div class="col-md-3 space-icon">
             <img src="{{ space.icon }}" height="50" />
             <button class="btn btn-xs btn-success">Subscribe</button>
           </div>
-          <div class="col-md-12 space-description">
+          <div class="col-md-9 space-description">
             <h4><a href="/space/{{ space.url_slug }}">{{ space.title }}</a></h4>
-            <p>{{ space.description }}</p>
+            <p class="description">{{ space.description }}</p>
             <p class="meta">{{ space.subscribers }} subscribers. Active {{ space.last_active }}</p>
           </div>
         </li>

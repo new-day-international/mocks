@@ -1,0 +1,33 @@
+---
+layout: default
+title: Your New Jekyll Site
+tags:
+- spaces
+---
+
+<div class="row">
+  <div id="home" class="container col-md-9">
+    <ul id="item-list" class="v-grid media-list">
+      {% for space in site.data.spaces %}
+        <li class="media space">
+          <h4><a href="/space/{{ space.url_slug }}">{{ space.title }}</a></h4>
+          
+          <div class="space-icon">
+            <img src="{{ space.icon }}" height="50" /><br />
+            <button class="btn btn-xs btn-success">Subscribe</button>
+          </div>
+          <div class="col-md-12 space-description">
+            <p class="description">{{ space.description }}</p>
+            <p class="meta">
+              {{ space.subscribers }} subscribers.<br /> 
+              Active {{ space.last_active }}
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% include sidebar.html %}
+
+</div>

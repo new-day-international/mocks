@@ -11,6 +11,10 @@ function changeTheme(name) {
 // Run all jQuery
 $(function () {
   $("time").timeago();
+  $(".spaces-gui").tooltip({
+      selector: "[data-toggle=tooltip]",
+      container: "body"
+  });
 
   $(".theme").find('a').click(function(event) {
     event.preventDefault();

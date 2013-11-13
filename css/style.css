@@ -77,10 +77,59 @@
 }
 
 .space-description {}
+.space-description .description {
+  max-height: 120px;
+  overflow: hidden;
+  padding: 5px 5px 10px 5px;
+  font-size: 13px;
+  line-height: 16px;
+}
 .space-description .meta {
+  padding: 0 0 0 5px; 
+  font-size: 12px;
+  line-height: 16px;
   font-weight: bold;
 }
 
+.spaces-gui a {
+  padding: 3px 8px !important; margin: 15px 0px 10px;
+  border: 1px solid #999;
+}
+
+/*** v-grid ***/
+.v-grid .media {
+    float: left;
+    width: 23%; height: 320px;
+    margin: 5px 2% 5px 0;
+    text-align: center;
+    border: 2px solid black;
+    }
+    .v-grid .media:first-child {
+      margin-top: 5px;
+    }
+  .v-grid .media h4  { margin: 0 auto; }
+  .v-grid .media img { margin: 10px auto; }
+
+  .v-grid .media button { margin: 5px auto;
+  }
+
+  .v-grid .media p {
+    margin-top: 5px;
+    text-align: left;
+    }
+
+/*** h-grid ***/
+.h-grid .media {
+  float: left;
+  width: 48%; height: 180px;
+  margin: 5px 2% 5px 0;
+  border: 2px solid black;
+  }
+  .h-grid .media:first-child { margin-top: 5px; }
+  .h-grid .media .space-icon { margin-top: 27px; }
+  .h-grid .media .meta { margin-top: 10px;}
+
+/*** nav ***/
 
 ul.nav li.spaces-dropdown > ul.dropdown-menu a {
   padding: 1px 8px !important;
