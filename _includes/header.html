@@ -33,7 +33,19 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/space">spaces</a></li>
+            <li class="btn-group spaces-dropdown">
+              <a href="/space" class="btn">spaces 
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                {% for space in site.data.subscribed-spaces %}
+                  <li><a href="/space/{{ space.name }}">{{ space.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+
+
             <li><a href="#about">all</a></li>
             <li><a href="#contact">follow</a></li>
             <li><a href="#contact">mod</a></li>
