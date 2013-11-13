@@ -43,7 +43,7 @@
   color: rgb(47, 164, 231);
 }
 #item-list .media-object {
-  margin-top: 14px;
+  margin-top: 8px;
 }
 #item-list .media .vote-buttons {
   width: 25px;
@@ -72,4 +72,8 @@ ul.nav li.spaces-dropdown > ul.dropdown-menu a {
 }
 ul.nav li.spaces-dropdown:hover > ul.dropdown-menu {
     display: block;    
+}
+
+ul.nav .btn {
+  text-shadow: none;
 }

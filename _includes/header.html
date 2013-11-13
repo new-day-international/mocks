@@ -44,11 +44,18 @@
                 {% endfor %}
               </ul>
             </li>
-
-
-            <li><a href="#about">all</a></li>
-            <li><a href="#contact">follow</a></li>
-            <li><a href="#contact">mod</a></li>
+            <li class="btn-group">
+              <a href="" class="btn dropdown-toggle" data-toggle="dropdown">last active 
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">top</a></li>
+                <li><a href="#">hot</a></li>
+                <li><a href="#">new</a></li>
+                <li><a href="#">votes</a></li>
+              </ul>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><i class="fa fa-envelope-o"></i> Inbox <span class="badge btn-danger">5</span></a></li>
