@@ -6,15 +6,48 @@
       </div>
     </form>
     <br/>
-    <br/>
 
-    <button type="button" class="btn btn-block btn-primary">Manange subscriptions</button>
-    <br/>
-    <button type="button" class="btn btn-block btn-primary">Add new link</button>
-    <button type="button" class="btn btn-block btn-primary">Add new text post</button>
-    <button type="button" class="btn btn-block btn-primary">Add new file</button>
-    <br/>
+    <button type="button" class="btn btn-block btn-success"><i class="fa fa-plus"></i>  Create your own space</button>
 
-    <button type="button" class="btn btn-block btn-primary">Create your own space</button>
+    <h3>Add a new:</h3>
+
+    <div class="btn-group btn-group-justified">
+        <a type="button" class="btn btn-success"><i class="fa fa-link"></i> link</a>
+        <a type="button" class="btn btn-success"><i class="fa fa-file-text-o"></i> post</a>
+        <a type="button" class="btn btn-success"><i class="fa fa-paperclip"></i> file</a>
+    </div>
+
+    {% if page.type == "space_page" %}
+        <h3>{{ page.category }}</h3>
+        <button type="button" class="btn btn-success btn-sm">Subscribe</button>
+        <br/><br/>
+        <div class="well well-sm">
+          <h4><i class="glyphicon glyphicon-exclamation-sign"></i> House Rules</h4>
+          <ul>
+            <li>Act with honesty and good faith</li>
+            <li>Assume the same in others</li>
+            <li>Be nice</li>
+            <li>Start with the assumption of possible</li>
+            <li>Ask how we can do it</li>
+            <li>Surface issues/problems in a positive way</li>
+          </ul>
+        </div>
+
+        <div class="well well-sm">
+          <h4><i class="glyphicon glyphicon-globe"></i> Space Overview</h4>
+          <p>Want to help change the world? This is the place to talk strategy and tactics for building a better world together.</p>
+        </div>
+
+        <div class="well well-sm">
+          <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Space Rules</h4>
+          <ul>
+            <li>Be honest</li>
+            <li>Be nice</li>
+            <li>Think big</li>
+            <li>Help others</li>
+          </ul>
+        </div>
+      </div>
+    {% endif %}
 
 </div>
