@@ -2,7 +2,7 @@ function changeTheme(name) {
   $('#bootstrap-theme').attr('href', "//netdna.bootstrapcdn.com/bootswatch/3.0.0/" + name + "/bootstrap.min.css");
   $.cookie('theme', name);
   $('body').removeClass('theme-' + $('body').data('theme'));
-  $('body').data('theme', name);
+  $('body').data('theme', name, { path: '/' });
   $('body').addClass('theme-' + name);
   $('.theme').removeClass('disabled');
   $('.theme a:contains("' + name + '")').parent().addClass('disabled');
@@ -28,7 +28,7 @@ $(function () {
     }, 500);
   }
   $('#instructions1').on('hidden.bs.modal', function () {
-    $.cookie('instructions1', 'hide');
+    $.cookie('instructions1', 'hide', { path: '/' });
   });
 
 });
