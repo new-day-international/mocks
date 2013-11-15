@@ -19,34 +19,52 @@
 
     {% if page.type == "space_page" %}
         <h3>{{ page.category }}</h3>
-        <button type="button" class="btn btn-success btn-sm">Subscribe</button>
+        {% for space in site.data.spaces %}
+            {% if space.url_slug == page.category %}
+
+            {% if space.subscribed == false %}
+            <button type="button" class="btn btn-success btn-sm">Subscribe</button>
+            {% elsif space.subscribed == true %}
+            <button type="button" class="btn btn-danger btn-sm">Unsubscribe</button>
+            {% endif %}
+
         <br/><br/>
+
+        <h4><i class="glyphicon glyphicon-exclamation-sign"></i> House Rules</h4>
         <div class="well well-sm">
-          <h4><i class="glyphicon glyphicon-exclamation-sign"></i> House Rules</h4>
+          <p>House Rules from {{ space.house }}:</p>
           <ul>
-            <li>Act with honesty and good faith</li>
-            <li>Assume the same in others</li>
-            <li>Be nice</li>
-            <li>Start with the assumption of possible</li>
-            <li>Ask how we can do it</li>
-            <li>Surface issues/problems in a positive way</li>
+            {% for house in site.data.houses %}{% if house.title == space.house %}
+                {% for rule in house.rules %}
+                    <li>{{ rule }}</li>
+                {% endfor %}
+            {% endif %}{% endfor %}
+          </ul>
+          <p></p>
+        </div>
+
+        <h4><i class="glyphicon glyphicon-globe"></i> Space Overview</h4>
+        <div class="well well-sm">
+            <p>{{ space.description }}<p>
+        </div>
+
+        <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Space Rules</h4>
+        <div class="well well-sm">
+          <ul>
+            {% for rule in space.rules %}
+                <li>{{ rule }}</li>
+            {% endfor %}
           </ul>
         </div>
 
-        <div class="well well-sm">
-          <h4><i class="glyphicon glyphicon-globe"></i> Space Overview</h4>
-          <p>Want to help change the world? This is the place to talk strategy and tactics for building a better world together.</p>
-        </div>
-
-        <div class="well well-sm">
-          <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Space Rules</h4>
-          <ul>
-            <li>Be honest</li>
-            <li>Be nice</li>
-            <li>Think big</li>
-            <li>Help others</li>
-          </ul>
-        </div>
+        <h4>Moderators</h4>
+        <ul class="list-unstyled well">
+            {% for moderator in space.moderators %}
+                <li>{{ moderator}}</li>
+            {% endfor %}
+        </ul>
+            {% endif %}
+        {% endfor %}
       </div>
     {% endif %}
 

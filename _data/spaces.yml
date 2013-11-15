@@ -1,63 +1,83 @@
 - title: Books
   url_slug: books
-  house: House of Lighnet
+  house: Lightnet
+  moderators: [Jim_Rutt_1, Miriam_Donald_Burrows_1]
   subscribers: 43
   last_active: 6 minutes ago
   icon: /img/spaces/books.png
   description: A place to discuss the books we are reading. All types and genres welcome!
+  subscribed: true
 
 - title: Links
   url_slug: links
-  house: House of Lighnet
+  house: Lightnet
+  moderators: [Curtis_Faith_1, Jim_Rutt_1, Miriam_Donald_Burrows_1]
   subscribers: 246
   last_active: 12 minutes ago
   icon: /img/spaces/links.png
   description: Links of interest to the lightnet community. Post a link here if you want the community to rate it and see it.
+  rules: [Be honest, Be nice, Think big, Help others]
+  subscribed: false
 
 - title: Politics.Economics
-  url_slug: politics-economics
-  house: the.house.of.joy
+  url_slug: politics.economics
+  house: Joy
+  moderators: [Jordan_Greenhall_1]
   subscribers: 13
   last_active: 32 minutes ago
   icon: /img/spaces/default.png
   description: A discussion of all things in the mundane world of politics and policy
+  subscribed: true
 
 - title: Flosolutions
   url_slug: flosolutions
-  house: House of Dreams
+  house: Lightnet
+  moderators: [devin_1]
   subscribers: 43
   last_active: an hour ago
   icon: /img/spaces/default.png
   description: This space is for people to discuss past, present and future free/libre/open-source solutions for common challenges faced by inidividuals, groups, organizations, communities, governments and more.
+  subscribed: false
 
 - title: World-Change
   url_slug: world-change
-  house: House of Dreams
+  house: Dreams
+  moderators: [Curtis_Faith_1]
   subscribers: 214
   last_active: an hour ago
   icon: /img/spaces/default.png
   description: Want to help change the world? This is the place to talk strategy and tactics for building a better world together.
+  rules: [Be honest, Be nice, Think big, Help others]
+  subscribed: true
 
 - title: Jefferson
   url_slug: jefferson
-  house: House of Jefferson
+  house: Jefferson
+  moderators: [Jim_Rutt_1]
   subscribers: 5
   last_active: 2 hours ago
   icon: /img/spaces/jefferson.png
   description: Dedicated to encouraging discussions in an empirical and materialist (philosophical meaning) style
+  subscribed: true
 
 - title: Studioblue
   url_slug: studioblue
-  house: House of Wu
+  house: Wu
+  moderators: [Bonnitta_Roy_1]
   subscribers: 41
   last_active: 2 hours ago
   icon: /img/spaces/studioblue.png
   description: A place for meaningful explorations, spontaneous insight and creative play. a space for imagination and generative discourse, new ways of thinking about the world. a studio for deepening connection, for developing excellent friendships.
+  rules: [Be honest, Be nice, Think big, Help others]
+  subscribed: false
 
 - title: Lightnet.News
-  url_slug: world-change
-  house: House of Lightnet
+  url_slug: lightnet-news
+  house: Lightnet
+  moderators: [Curtis_Faith_1, Jim_Rutt_1, Miriam_Donald_Burrows_1]
   subscribers: 501
   last_active: 3 hours ago
   icon: /img/spaces/default.png
   description: The place to follow to keep up with what's happening with the lightnet software and community.
+  rules: [Be honest, Deal in good faith, Don't be a shitbird]
+  subscribed: true

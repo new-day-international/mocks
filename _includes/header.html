@@ -39,8 +39,10 @@
                 <span class="sr-only">Toggle Dropdown</span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                {% for space in site.data.subscribed-spaces %}
-                  <li><a href="/space/{{ space.name }}">{{ space.name }}</a></li>
+                {% for space in site.data.spaces %}
+                  {% if space.subscribed == true %}
+                  <li><a href="/space/{{ space.name }}">{{ space.title }}</a></li>
+                  {% endif %}
                 {% endfor %}
               </ul>
             </li>
