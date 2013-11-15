@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "What is \"Joyful Consent\"?"
-categories: [links]
+category: links
+type: post_page
 date:   2013-10-25 14:10:34 -0400
 poster_image: '/img/accounts/Jordan_Greenhall_1.gif'
 poster: Jordan Greenhall

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "I Want to Be a Millennial When I Retire"
-categories: [world-change]
+category: world-change
+type: post_page
 date:   2013-11-07 21:37:41
 poster_image: '/img/accounts/Jim_Rutt_1.gif'
 poster: Jim Rutt

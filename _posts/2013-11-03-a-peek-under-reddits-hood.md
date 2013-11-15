@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "A Peek Under Reddit's Hood"
-categories: [lightnet]
+category: lightnet-news
+type: post_page
 date:   2013-11-03 21:37:41
 poster_image: '/img/accounts/Curtis_Faith_1.gif'
 poster: Curtis Faith

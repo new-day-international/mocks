@@ -17,7 +17,7 @@
         <a type="button" class="btn btn-success"><i class="fa fa-paperclip"></i> file</a>
     </div>
 
-    {% if page.type == "space_page" %}
+    {% if page.type == "space_page" or page.type == "post_page" %}
         <h3>{{ page.category }}</h3>
         {% for space in site.data.spaces %}
             {% if space.url_slug == page.category %}
@@ -65,7 +65,6 @@
         </ul>
             {% endif %}
         {% endfor %}
-      </div>
+        </div>
     {% endif %}
-
 </div>

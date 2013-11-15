@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Crowdfunding Platforms"
-categories: [links]
+category: links
+type: post_page
 date:   2013-11-05 21:37:41
 poster_image: '/img/accounts/Meghan_Williamson_1.gif'
 poster: Meghan Williamson 

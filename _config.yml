@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 exclude: 
   - Rakefile
+permalink: /space/:categories/:title
