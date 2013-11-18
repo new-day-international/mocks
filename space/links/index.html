@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Your New Jekyll Site</title>
+    <title>Category: links</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 
@@ -10,82 +10,14 @@
   -->
     <link id="bootstrap-theme" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <style>
-    #leftbar {
-      background-color: #ddd;
-    }
-    
-    .navbar-nav>li.dropdown>a {
-      padding: 6px;
-    }
 
-    .theme-amelia #item-list>li:nth-child(odd) {
-      background-color: rgb(15, 127, 136);
-    }
-
-    .theme-slate #item-list>li:nth-child(odd) {
-      background-color: rgb(53, 58, 65);
-    }
-
-    #item-list>li:nth-child(odd) {
-      background-color: #f0f0f0;
-    }
-    
-    #item-list .media {
-      padding: 10px 5px 0;
-    }
-    #item-list .media p {
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-
-
-    #item-list .media {
-      padding: 10px 5px 0;
-    }
-
-    #item-list .media p {
-      margin: 0;
-    }
-
-    #item-list .media .minor {
-      color: rgb(221, 221, 221);
-    }
-
-    #item-list .media:hover .minor {
-      color: rgb(47, 164, 231);
-    }
-    #item-list .media-object {
-      margin-top: 14px;
-    }
-    #item-list .media .vote-buttons {
-      width: 25px;
-    }
-
-    #item-list .media .vote-buttons i {
-      font-size: 24px;
-      color: rgb(221, 221, 221);
-
-    }
-    #item-list ol, #item-list ul {
-        list-style: none outside none;
-    }
-
-    #item-list .media:hover .vote-buttons i {
-      color: rgb(47, 164, 231);
-    }
-
-    #item-list .media {
-      border-radius: 2px;
-    }
-
-    </style>
   </head>
   <body>
     <!-- Static navbar -->
@@ -101,16 +33,70 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/space">my spaces</a></li>
-            <li><a href="#about">all</a></li>
-            <li><a href="#contact">follow</a></li>
-            <li><a href="#contact">mod</a></li>
+            <li class="btn-group spaces-dropdown">
+              <a href="/spaces/index.html" class="btn">spaces 
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                
+                  
+                  <li><a href="/space/">Books</a></li>
+                  
+                
+                  
+                
+                  
+                  <li><a href="/space/">Politics.Economics</a></li>
+                  
+                
+                  
+                
+                  
+                  <li><a href="/space/">World-Change</a></li>
+                  
+                
+                  
+                  <li><a href="/space/">Jefferson</a></li>
+                  
+                
+                  
+                
+                  
+                  <li><a href="/space/">Lightnet.News</a></li>
+                  
+                
+              </ul>
+            </li>
+            <li class="btn-group sort-dropdown">
+              <a href="" class="btn dropdown-toggle" data-toggle="dropdown">last active 
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">top</a></li>
+                <li><a href="#">hot</a></li>
+                <li><a href="#">new</a></li>
+                <li><a href="#">votes</a></li>
+              </ul>
+            </li>
+
+            
           </ul>
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><i class="fa fa-envelope-o"></i> Inbox <span class="badge btn-danger">5</span></a></li>
-            <li><a href="#">Notification <span class="badge btn-danger">42</span></a></li>
+            <li>
+              <a href="#" class="ping">
+                <i class="fa fa-envelope-o fa-emx"></i> <span class="badge btn-danger">5</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ping">
+                <i class="fa fa-bolt fa-emx"></i> <span class="badge btn-danger">42</span>
+              </a>
+            </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-rounded" src="/img/accounts/Myers_Carpenter_1.gif" height="40" width="40" /><b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-rounded" src="/img/accounts/Casey_Driscoll_1.gif" height="40" width="40" /> Casey Driscoll<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">saved</a></li>
                 <li><a href="#">options</a></li>
@@ -163,114 +149,218 @@
 
     <div class="container">
       <div class="row">
-  <div id="home" class="container col-md-9">
+  <div id="home" class="col-md-9">
     <ul id="item-list" class="media-list">
       
         <li class="media">
-          <a class="pull-left" href="/links/2013/11/05/probes-into-forex-trading-spread-across-globe.html">
-            <img src="/img/accounts/Curtis_Faith_1.gif" height="48" width="48" class="img-rounded media-object" />
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="fa fa-arrow-up"></i><br/>
+            12<br/>
+            <i class="fa fa-arrow-down"></i>
+          </div>
+
+          <a class="pull-left" href="/space/links/probes-into-forex-trading-spread-across-globe">
+            <img src="/img/accounts/Curtis_Faith_1.gif" height="50" width="50" class="img-rounded media-object" />
           </a>
           <div class="media-body">
-            <h4 class="media-heading"><a href="/links/2013/11/05/probes-into-forex-trading-spread-across-globe.html">Probes into forex trading spread across globe</a></h4>
+            <h4 class="media-heading"><a href="/space/links/probes-into-forex-trading-spread-across-globe">Probes into forex trading spread across globe</a></h4>
             <p>
-              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Flemming_Funch_1">Flemming Funch</a>,  added <time datetime="2013-11-05T21:37:41Z">on 05 November 2013</time> by <a href="/u/Curtis_Faith_1">Curtis Faith</a> in <a href="/space/links">links</a></p>
-              
+              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Flemming_Funch_1">Flemming Funch</a>,  added <time datetime="2013-11-05T21:37:41Z">on 05 November 2013</time> by <a href="/u/Curtis_Faith_1">Curtis Faith</a> in <a href="/space/links">links</a>
+              <br/>
+              <button type="button" class="btn-sm btn-link"><i class="glyphicon glyphicon-comment"></i> 3 comments</button>
+              <button type="button" class="btn-sm btn-link minor">save</button>
+              <button type="button" class="btn-sm btn-link minor">report</button>
+            </p>
           </div>
         </li>
       
         <li class="media">
-          <a class="pull-left" href="/links/2013/11/05/holoworld.html">
-            <img src="/img/accounts/Flemming_Funch_1.gif" height="48" width="48" class="img-rounded media-object" />
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="fa fa-arrow-up"></i><br/>
+            3<br/>
+            <i class="fa fa-arrow-down"></i>
+          </div>
+
+          <a class="pull-left" href="/space/links/holoworld">
+            <img src="/img/accounts/Flemming_Funch_1.gif" height="50" width="50" class="img-rounded media-object" />
           </a>
           <div class="media-body">
-            <h4 class="media-heading"><a href="/links/2013/11/05/holoworld.html">Holoworld</a></h4>
+            <h4 class="media-heading"><a href="/space/links/holoworld">Holoworld</a></h4>
             <p>
-              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Curtis_Faith_1">Curtis Faith</a>,  added <time datetime="2013-11-05T21:37:41Z">on 05 November 2013</time> by <a href="/u/Flemming_Funch_1">Flemming Funch</a> in <a href="/space/links">links</a></p>
-              
+              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Curtis_Faith_1">Curtis Faith</a>,  added <time datetime="2013-11-05T21:37:41Z">on 05 November 2013</time> by <a href="/u/Flemming_Funch_1">Flemming Funch</a> in <a href="/space/links">links</a>
+              <br/>
+              <button type="button" class="btn-sm btn-link"><i class="glyphicon glyphicon-comment"></i> 12 comments</button>
+              <button type="button" class="btn-sm btn-link minor">save</button>
+              <button type="button" class="btn-sm btn-link minor">report</button>
+            </p>
           </div>
         </li>
       
         <li class="media">
-          <a class="pull-left" href="/links/2013/11/05/crowdfunding-platforms.html">
-            <img src="/img/accounts/Meghan_Williamson_1.gif" height="48" width="48" class="img-rounded media-object" />
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="fa fa-arrow-up"></i><br/>
+            2<br/>
+            <i class="fa fa-arrow-down"></i>
+          </div>
+
+          <a class="pull-left" href="/space/links/crowdfunding-platforms">
+            <img src="/img/accounts/Meghan_Williamson_1.gif" height="50" width="50" class="img-rounded media-object" />
           </a>
           <div class="media-body">
-            <h4 class="media-heading"><a href="/links/2013/11/05/crowdfunding-platforms.html">Crowdfunding Platforms</a></h4>
+            <h4 class="media-heading"><a href="/space/links/crowdfunding-platforms">Crowdfunding Platforms</a></h4>
             <p>
-              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Flemming_Funch_1">Flemming Funch</a>,  added <time datetime="2013-11-05T21:37:41Z">on 05 November 2013</time> by <a href="/u/Meghan_Williamson_1">Meghan Williamson</a> in <a href="/space/links">links</a></p>
-              
+              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Flemming_Funch_1">Flemming Funch</a>,  added <time datetime="2013-11-05T21:37:41Z">on 05 November 2013</time> by <a href="/u/Meghan_Williamson_1">Meghan Williamson</a> in <a href="/space/links">links</a>
+              <br/>
+              <button type="button" class="btn-sm btn-link"><i class="glyphicon glyphicon-comment"></i> comment</button>
+              <button type="button" class="btn-sm btn-link minor">save</button>
+              <button type="button" class="btn-sm btn-link minor">report</button>
+            </p>
           </div>
         </li>
       
         <li class="media">
-          <a class="pull-left" href="/links/2013/11/04/the-good.html">
-            <img src="/img/accounts/Jim_Rutt_1.gif" height="48" width="48" class="img-rounded media-object" />
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="fa fa-arrow-up"></i><br/>
+            1<br/>
+            <i class="fa fa-arrow-down"></i>
+          </div>
+
+          <a class="pull-left" href="/space/links/the-good">
+            <img src="/img/accounts/Jim_Rutt_1.gif" height="50" width="50" class="img-rounded media-object" />
           </a>
           <div class="media-body">
-            <h4 class="media-heading"><a href="/links/2013/11/04/the-good.html">The Good</a></h4>
+            <h4 class="media-heading"><a href="/space/links/the-good">The Good</a></h4>
             <p>
-              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Meghan_Williamson_1">Meghan Williamson</a>,  added <time datetime="2013-11-04T21:37:41Z">on 04 November 2013</time> by <a href="/u/Jim_Rutt_1">Jim Rutt</a> in <a href="/space/links">links</a></p>
-              
+              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Meghan_Williamson_1">Meghan Williamson</a>,  added <time datetime="2013-11-04T21:37:41Z">on 04 November 2013</time> by <a href="/u/Jim_Rutt_1">Jim Rutt</a> in <a href="/space/links">links</a>
+              <br/>
+              <button type="button" class="btn-sm btn-link"><i class="glyphicon glyphicon-comment"></i> 4 comments</button>
+              <button type="button" class="btn-sm btn-link minor">save</button>
+              <button type="button" class="btn-sm btn-link minor">report</button>
+            </p>
           </div>
         </li>
       
         <li class="media">
-          <a class="pull-left" href="/links/2013/10/25/what-is-joyful-consent.html">
-            <img src="/img/accounts/Jordan_Greenhall_1.gif" height="48" width="48" class="img-rounded media-object" />
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="fa fa-arrow-up"></i><br/>
+            7<br/>
+            <i class="fa fa-arrow-down"></i>
+          </div>
+
+          <a class="pull-left" href="/space/links/what-is-joyful-consent">
+            <img src="/img/accounts/Jordan_Greenhall_1.gif" height="50" width="50" class="img-rounded media-object" />
           </a>
           <div class="media-body">
-            <h4 class="media-heading"><a href="/links/2013/10/25/what-is-joyful-consent.html">What is "Joyful Consent"?</a></h4>
+            <h4 class="media-heading"><a href="/space/links/what-is-joyful-consent">What is "Joyful Consent"?</a></h4>
             <p>
-              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Curtis_Faith_1">Curtis Faith</a>,  added <time datetime="2013-10-25T18:10:34Z">on 25 October 2013</time> by <a href="/u/Jordan_Greenhall_1">Jordan Greenhall</a> in <a href="/space/links">links</a></p>
-              
+              last comment <time datetime="2013-11-01T22:37:41Z">on 01 November 2013</time> by <a href="/u/Curtis_Faith_1">Curtis Faith</a>,  added <time datetime="2013-10-25T18:10:34Z">on 25 October 2013</time> by <a href="/u/Jordan_Greenhall_1">Jordan Greenhall</a> in <a href="/space/links">links</a>
+              <br/>
+              <button type="button" class="btn-sm btn-link"><i class="glyphicon glyphicon-comment"></i> 44 comments</button>
+              <button type="button" class="btn-sm btn-link minor">save</button>
+              <button type="button" class="btn-sm btn-link minor">report</button>
+            </p>
           </div>
         </li>
       
     </ul>
   </div>
 
-  <div id="sidebar" class="container col-md-3">
+  <div id="sidebar" class=" col-md-3">
     <form method="get" action="/search">
-
-
       <div class="input-group input-group">
         <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
         <input type="text" class="form-control" placeholder="search lightnet">
       </div>
     </form>
     <br/>
-    <br/>
 
-    <button type="button" class="btn btn-block btn-primary">Manange subscriptions</button>
-    <br/>
-    <button type="button" class="btn btn-block btn-primary">Add new link</button>
-    <button type="button" class="btn btn-block btn-primary">Add new text post</button>
-    <button type="button" class="btn btn-block btn-primary">Add new file</button>
-    <br/>
+    <button type="button" class="btn btn-block btn-success"><i class="fa fa-plus"></i>  Create your own space</button>
+
+    <h3>Add a new:</h3>
+
+    <div class="btn-group btn-group-justified">
+        <a type="button" class="btn btn-success"><i class="fa fa-link"></i> link</a>
+        <a type="button" class="btn btn-success"><i class="fa fa-file-text-o"></i> post</a>
+        <a type="button" class="btn btn-success"><i class="fa fa-paperclip"></i> file</a>
+    </div>
+
     
-    <button type="button" class="btn btn-block btn-primary">Create your own space</button>
+        <h3>links</h3>
+        
+            
+        
+            
 
-    <h3>Links</h3>
-    <button type="button" class="btn btn-success btn-sm">Subscribe</button>
+            
+            <button type="button" class="btn btn-success btn-sm">Subscribe</button>
+            
 
-    <br/>
-    <br/>
+        <br/><br/>
 
-    <div class="well well-sm">
-      <h4><i class="glyphicon glyphicon-exclamation-sign"></i> House Rules</h4>
-      <ul>
-        <li>Act with honesty and good faith</li>
-        <li>Assume the same in others</li>
-        <li>Be nice</li>
-      </ul>
-    </div>
+        <h4><i class="glyphicon glyphicon-exclamation-sign"></i> House Rules</h4>
+        <div class="well well-sm">
+          <p>House Rules from Lightnet:</p>
+          <ul>
+            
+                
+                    <li>Act with honesty and good faith</li>
+                
+                    <li>Assume the same in others</li>
+                
+                    <li>Be nice</li>
+                
+            
+          </ul>
+          <p></p>
+        </div>
 
-    <div class="well well-sm">
-      <h4><i class="glyphicon glyphicon-globe"></i> Space Overview</h4>
-      <p>Links of interest to the lightnet community. Post a link here if you want the community to rate it and see it.</p>
-    </div>
+        <h4><i class="glyphicon glyphicon-globe"></i> Space Overview</h4>
+        <div class="well well-sm">
+            <p>Links of interest to the lightnet community. Post a link here if you want the community to rate it and see it.<p>
+        </div>
 
-  </div>
+        <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Space Rules</h4>
+        <div class="well well-sm">
+          <ul>
+            
+                <li>Be honest</li>
+            
+                <li>Be nice</li>
+            
+                <li>Think big</li>
+            
+                <li>Help others</li>
+            
+          </ul>
+        </div>
+
+        <h4>Moderators</h4>
+        <ul class="list-unstyled well">
+            
+                <li>Curtis_Faith_1</li>
+            
+                <li>Jim_Rutt_1</li>
+            
+                <li>Miriam_Donald_Burrows_1</li>
+            
+        </ul>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        </div>
+    
+</div>
 </div>
     </div>
 
@@ -280,35 +370,6 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
     <script src="/js/jquery.timeago.js"></script>
     <script src="/js/jquery.cookie.js"></script>
-    <script>
-      function changeTheme(name) {
-        $('#bootstrap-theme').attr('href', "//netdna.bootstrapcdn.com/bootswatch/3.0.0/" + name + "/bootstrap.min.css");
-        $.cookie('theme', name);
-        $('body').removeClass('theme-' + $('body').data('theme'));
-        $('body').data('theme', name);
-        $('body').addClass('theme-' + name);
-        $('.theme').removeClass('disabled');
-        $('.theme a:contains("' + name + '")').parent().addClass('disabled');
-      }
-      $(function () {
-        $("time").timeago();
-
-        $(".theme").find('a').click(function(event) {
-          event.preventDefault();
-          changeTheme($(this).text());
-        })
-        var theme = $.cookie('theme') || 'cerulean'
-        changeTheme(theme);
-        if ($.cookie('instructions1') != 'hide') {
-          setTimeout(function() {
-            $('#instructions1').modal({});
-          }, 500);
-        }
-        $('#instructions1').on('hidden.bs.modal', function () {
-          $.cookie('instructions1', 'hide');
-        });
-
-      });
-    </script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
