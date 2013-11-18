@@ -4,7 +4,7 @@ title:  "Glenn Greenwald leaving Guardian to start new news outlet"
 category: lightnet-news
 type: post_page
 date:   2013-10-20 21:37:41
-poster_image: '/img/accounts/Casey_Driscoll_1.gif'
+poster_image: '/img/accounts/Casey_Driscoll_1.jpg'
 poster: Casey Driscoll
 poster_username: Casey_Driscoll_1
 target_url: http://www.buzzfeed.com/bensmith/exclusive-glenn-greenwald-will-leave-guardian-to-create-new

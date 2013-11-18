@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="row">
+<div class="row post">
   <div class="col-md-9">
     <ul id="item-list" class="media-list well well-sm">
         <li class="media" style="background-color: transparent !important;">
@@ -44,6 +44,87 @@ layout: default
         </div>
         
     </form>
+
+    <ul id="item-list" class="media-list">
+      {% for comment in page.comments %}
+        <li class="media">
+          <div class="pull-left vote-buttons text-center" style="width:25px;">
+            <i class="fa fa-arrow-up"></i><br/>
+            {{ comment.score }}<br/>
+            <i class="fa fa-arrow-down"></i>
+          </div>
+
+          <a class="pull-left" href="{{ post.url }}">
+            <img src="{{ comment.poster_image }}" height="50" width="50" class="img-rounded media-object" />
+          </a>
+          <div class="media-body">
+            <p>
+                <a href="/u/{{comment.poster_username}}">{{ comment.poster }}</a> - 
+                <time datetime="{{ comment.date | date_to_xmlschema}}">on {{ comment.date | date_to_long_string }}</time>
+            </p>
+            {{ comment.content }}
+            <p>
+              <button type="button" class="btn-sm btn-link minor">save</button>
+              <button type="button" class="btn-sm btn-link minor">report</button>
+            </p>
+            <ul id="item-list" class="media-list">
+              {% for comment in comment.comments %}
+                <li class="media">
+                  <div class="pull-left vote-buttons text-center" style="width:25px;">
+                    <i class="fa fa-arrow-up"></i><br/>
+                    {{ comment.score }}<br/>
+                    <i class="fa fa-arrow-down"></i>
+                  </div>
+
+                  <a class="pull-left" href="{{ post.url }}">
+                    <img src="{{ comment.poster_image }}" height="50" width="50" class="img-rounded media-object" />
+                  </a>
+                  <div class="media-body">
+                    <p>
+                        <a href="/u/{{comment.poster_username}}">{{ comment.poster }}</a> - 
+                        <time datetime="{{ comment.date | date_to_xmlschema}}">on {{ comment.date | date_to_long_string }}</time>
+                    </p>
+                    {{ comment.content }}
+                    <p>
+                      <button type="button" class="btn-sm btn-link minor">save</button>
+                      <button type="button" class="btn-sm btn-link minor">report</button>
+                    </p>
+                    <ul id="item-list" class="media-list">
+                  {% for comment in comment.comments %}
+                    <li class="media">
+                      <div class="pull-left vote-buttons text-center" style="width:25px;">
+                        <i class="fa fa-arrow-up"></i><br/>
+                        {{ comment.score }}<br/>
+                        <i class="fa fa-arrow-down"></i>
+                      </div>
+
+                      <a class="pull-left" href="{{ post.url }}">
+                        <img src="{{ comment.poster_image }}" height="50" width="50" class="img-rounded media-object" />
+                      </a>
+                      <div class="media-body">
+                        <p>
+                            <a href="/u/{{comment.poster_username}}">{{ comment.poster }}</a> - 
+                            <time datetime="{{ comment.date | date_to_xmlschema}}">on {{ comment.date | date_to_long_string }}</time>
+                        </p>
+                        {{ comment.content }}
+                        <p>
+                          <button type="button" class="btn-sm btn-link minor">save</button>
+                          <button type="button" class="btn-sm btn-link minor">report</button>
+                        </p>
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
+                  </div>
+
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 
   {% include sidebar.html %}
