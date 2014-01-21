@@ -1,0 +1,119 @@
+---
+layout: default
+title: mocknet
+---
+
+<form role="form" class="form-horizontal">
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">new space name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="name" placeholder="Enter name">
+      <span class="help-block">no spaces, e.g. "slashdot"</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="subtitle" class="col-sm-2 control-label">subtitle</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="subtitle" placeholder="Enter subtitle">
+      <span class="help-block pull-left">e.g. "news for nerds, stuff that matters"</span>
+    </div>
+</span>
+  </div>
+  <div class="form-group">
+    <label for="description" class="col-sm-2 control-label">description</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" rows="3" placeholder="Enter description"></textarea>
+      <div class="help-block pull-left">publicly describe your space for all to see. 500 characters max.</div>
+      <div class="btn pull-right"><a href="http://localdev.lightnetb.org/wiki/etiquette">lightnet etiquette</a></div>
+      <div class="btn pull-right"><a href="formatting">formatting help</a></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="sidebar" class="col-sm-2 control-label">sidebar</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" rows="3" placeholder="Enter sidebar"></textarea>
+      <div class="help-block pull-left">shown in the right sidebar of your space. 5120 characters max.</div>
+      <div class="btn pull-right"><a href="http://localdev.lightnetb.org/wiki/etiquette">lightnet etiquette</a></div>
+      <div class="btn pull-right"><a href="formatting">formatting help</a></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">house rules</label>
+    <div class="col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          space is a house (with its own house rules)
+        </label>
+      </div>
+      <span class="help-block">define the norms and expectations for your space.</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">language</label>
+    <div class="col-sm-10">
+      <select class="form-control">
+        <option>English [en]</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">type</label>
+    <div class="col-sm-10">
+      <div class="radio">
+        <label>
+          <input type="radio" name="space_type" id="optionsRadios1" value="option1" checked>public
+        </label>
+        <span class="help-block">anyone can view and submit</span>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="space_type" id="optionsRadios2" value="option1">restricted
+        </label>
+        <span class="help-block">anyone can view, but only some are approved to submit links</span>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="space_type" id="optionsRadios3" value="option1">private
+        </label>
+        <span class="help-block">only approved members can view and submit</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">content options</label>
+    <div class="col-sm-10">
+      <div class="radio">
+        <label>
+          <input type="radio" name="content_options" id="optionsRadios1" value="option1" checked>any
+        </label>
+        <span class="help-block">any link type is allowed</span>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="content_options" id="optionsRadios2" value="option1">links only
+        </label>
+        <span class="help-block">only links to external sites are allowed</span>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="content_options" id="optionsRadios3" value="option1">text posts only
+        </label>
+        <span class="help-block">only text/self posts are allowed</span>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          allow users to upload files
+        </label>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="form-actions row clearfix">
+    <button type="submit" class="btn btn-primary pull-right">Submit</button>
+  </div>
+</form>
